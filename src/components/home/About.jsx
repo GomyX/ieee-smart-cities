@@ -39,8 +39,8 @@ function About() {
   const theme = useTheme();
   const statistics = [
     { icon: <PeopleIcon sx={{ fontSize: 40 }}/>, count: '500+', label: 'Participants' },
-    { icon: <SchoolIcon sx={{ fontSize: 40 }}/>, count: '20+', label: 'Workshops' },
-    { icon: <WorkIcon sx={{ fontSize: 40 }}/>, count: '30+', label: 'Speakers' },
+    { icon: <SchoolIcon sx={{ fontSize: 40 }}/>, count: '4', label: 'Workshops' },
+    { icon: <WorkIcon sx={{ fontSize: 40 }}/>, count: '10+', label: 'Speakers' },
     { icon: <TrendingUpIcon sx={{ fontSize: 40 }}/>, count: '4', label: 'Tracks' }
   ];
 
@@ -103,7 +103,7 @@ function About() {
                     <Code color="secondary" /> Hackathon Highlights
                   </Typography>
                   <Box component="ul" sx={{ pl: 2.5, color: 'text.secondary' }}>
-                    {['24-hour coding challenge', 'Mentorship support', 'Valuable prizes', 'Real-world impact'].map((item) => (
+                    {['business bootcamp', 'Mentorship support', 'Valuable prizes', 'Real-world impact'].map((item) => (
                       <Typography component="li" key={item} variant="body1" sx={{ mb: 1 }}>
                         {item}
                       </Typography>
@@ -172,7 +172,7 @@ function About() {
             <Grid item component={motion.div} whileHover={{ scale: 1.1 }}>
               <Paper elevation={0} sx={{ p: 2, borderRadius: 3, bgcolor: 'transparent' }}>
                 <img 
-                  src="/ieee-logo.png" 
+                  src="/src/assets/IEEE-logo.png" 
                   alt="IEEE Logo" 
                   style={{ height: 100, filter: 'drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1))' }}
                 />
@@ -181,7 +181,7 @@ function About() {
             <Grid item component={motion.div} whileHover={{ scale: 1.1 }}>
               <Paper elevation={0} sx={{ p: 2, borderRadius: 3, bgcolor: 'transparent' }}>
                 <img 
-                  src="/ntra-logo.png" 
+                  src="/src/assets/NTRA-Logo.png"
                   alt="NTRA Logo" 
                   style={{ height: 100, filter: 'drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1))' }}
                 />

@@ -2,28 +2,75 @@ import { Box, Container, Typography, Button, Stack } from '@mui/material'
 import { motion } from 'framer-motion'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { Link as RouterLink } from 'react-router-dom'
+import heroBg from "../../assets/hero.jpg";
 
 function Hero() {
   return (
-    <Box
-      component={motion.div}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      sx={{
-        minHeight: '90vh',
-        display: 'flex',
-        alignItems: 'center',
-        background: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/hero-bg.jpg")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: 'white',
-        position: 'relative',
-        overflow: 'hidden'
-      }}
+<Box
+  component={motion.div}
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+  sx={{
+    minHeight: '90vh',
+    display: 'flex',
+    alignItems: 'center',
+    backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${heroBg})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
+    backgroundRepeat: 'no-repeat', // Add this to prevent tiling
+    color: 'white',
+    position: 'relative',
+    overflow: 'hidden'
+  }}
     >
+      
       <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
+        <Stack 
+          direction="row" 
+          justifyContent="space-between"
+          alignItems="center"
+          sx={{ 
+            width: '100%',
+            position: 'absolute',
+            top: { xs: 70, sm: 80 },
+            left: 0,
+            px: { xs: 2, sm: 3, md: 4 }
+          }}
+        >
+          <Box
+            component="img"
+            src="/src/assets/IEEE-logo.png"
+            alt="IEEE Logo"
+            sx={{
+              height: { xs: 40, sm: 45, md: 50 },
+              width: 'auto',
+              filter: 'brightness(0) invert(1)'
+            }}
+          />
+          <Box
+            component="img"
+            src="/src/assets/NTRA-Logo.png"
+            alt="NTRA Logo"
+            sx={{
+              height: { xs: 60, sm: 65, md: 70 },
+              width: 'auto',
+              filter: 'brightness(0) invert(1)'
+            }}
+          />
+        </Stack>
         <Stack spacing={4} alignItems="center" textAlign="center">
+          <Box
+            component="img"
+            src="/src/assets/appx-logo-01.png"
+            alt="AppX Logo"
+            sx={{
+              width: '350px',
+              height: 'auto',
+              mb: 4
+            }}
+          />
           <Box 
             component={motion.div}
             initial={{ y: 50 }}
@@ -55,7 +102,7 @@ function Hero() {
             transition={{ delay: 0.4 }}
           >
             <Typography variant="h5" sx={{ fontSize: { xs: '1.25rem', sm: '1.5rem', md: '1.75rem' } }} gutterBottom>
-              March 15-16, 2024
+              February 26-27, 2025
             </Typography>
             <Typography variant="h6" sx={{ mb: 4, fontSize: { xs: '1rem', sm: '1.25rem', md: '1.5rem' } }}>
               Zewail City Campus
@@ -114,10 +161,6 @@ function Hero() {
             transition={{ delay: 0.8 }}
             sx={{ mt: 6 }}
           >
-            <Stack direction="row" spacing={{ xs: 2, sm: 3, md: 4 }} justifyContent="center">
-              <img src="/ieee-logo-white.png" alt="IEEE Logo" style={{ height: { xs: 30, sm: 35, md: 40 } }} />
-              <img src="/ntra-logo-white.png" alt="NTRA Logo" style={{ height: { xs: 30, sm: 35, md: 40 } }} />
-            </Stack>
           </Box>
         </Stack>
       </Container>
