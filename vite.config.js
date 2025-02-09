@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 
 export default defineConfig({
-  base: '',
+  base: '/ieee-smart-cities/',
   plugins: [react()],
   assetsInclude: ['**/*.JPG', '**/*.JPEG', '**/*.jpg'], // Add this line
   server: {
