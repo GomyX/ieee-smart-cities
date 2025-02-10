@@ -102,7 +102,7 @@ function Hero() {
             transition={{ delay: 0.4 }}
           >
             <Typography variant="h5" sx={{ fontSize: { xs: '1.25rem', sm: '1.5rem', md: '1.75rem' } }} gutterBottom>
-              February 26-27, 2025
+              February 26 - 27, 2025
             </Typography>
             <Typography variant="h6" sx={{ mb: 4, fontSize: { xs: '1rem', sm: '1.25rem', md: '1.5rem' } }}>
               Zewail City Campus

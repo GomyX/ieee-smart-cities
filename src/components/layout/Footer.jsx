@@ -132,7 +132,7 @@ function Footer() {
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <EmailIcon color="primary" />
                 <Link 
-                  href="mailto:info@ieeezc.org" 
+                  href="mailto:ieee@zewailcity.edu.eg" 
                   color="primary"
                   sx={{ 
                     textDecoration: 'none',
