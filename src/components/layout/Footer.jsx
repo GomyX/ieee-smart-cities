@@ -139,7 +139,7 @@ function Footer() {
                     '&:hover': { textDecoration: 'underline' }
                   }}
                 >
-                  info@ieeezc.org
+                  ieee@zewailcity.edu.eg
                 </Link>
               </Box>
             </Stack>
