@@ -1,8 +1,7 @@
-import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 
-export default defineConfig({
+export default {
   base: '/ieee-smart-cities/',
   plugins: [react()],
   assetsInclude: ['**/*.JPG', '**/*.JPEG', '**/*.jpg'], // Add this line
@@ -13,5 +12,5 @@ export default defineConfig({
   preview: {
     port: 3000
   }
-})
+}
 
