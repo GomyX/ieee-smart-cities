@@ -156,7 +156,7 @@ function Hackathon() {
                   boxShadow: '0 6px 20px rgba(255, 255, 255, 0.4)'
                 }
               }}
-              href="https://forms.gle/dFHHSa8BDYb2UweHA"
+              href="https://forms.gle/KL9DzGgHGqWpftSJ9"
               target="_blank"
             >
               Register Your Team
@@ -231,7 +231,7 @@ function Hackathon() {
           <Button 
             variant="contained" 
             size="large"
-            href="https://forms.gle/dFHHSa8BDYb2UweHA"
+            href="https://forms.gle/KL9DzGgHGqWpftSJ9"
             target="_blank"
             sx={{
               background: 'linear-gradient(45deg, #0A2647 30%, #00E1FF 90%)',
