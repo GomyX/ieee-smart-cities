@@ -36,6 +36,9 @@
   "@emotion/styled": "^11.10.6",
   
     
+  "@mui/base": "^5.0.0-beta.69",
+  
+    
   "@mui/icons-material": "^5.16.14",
   
     
@@ -60,7 +63,13 @@
   "react-router": "^6.29.0",
   
     
-  "react-router-dom": "^6.29.0"
+  "react-router-dom": "^6.29.0",
+  
+    
+  "react-slick": "^0.30.3",
+  
+    
+  "slick-carousel": "^1.8.1"
   
   },
   
