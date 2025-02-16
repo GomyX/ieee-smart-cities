@@ -10,13 +10,21 @@ import {
   CardMedia,
   Tab,
   Tabs,
-  Avatar
+  Avatar,
+  Stack
 } from '@mui/material'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import ArtificialIntelligenceIcon from '@mui/icons-material/Psychology'
 import IoTIcon from '@mui/icons-material/Router'
 import SecurityIcon from '@mui/icons-material/Security'
 import CloudIcon from '@mui/icons-material/Cloud'
+
+import heroBg from "../assets/hero.JPG";
+import IEELogo from "../assets/IEEE-logo.png";
+import NTRALogo from "../assets/NTRA-Logo.png";
+import AppXLogo from "../assets/appx-logo-01.png";
+
 
 const speakers = {
   'Dr. Ahmed Abdrabou': {
@@ -90,15 +98,77 @@ const agenda = {
 function Summit() {
   const [currentDay, setCurrentDay] = useState(0)
 
-  return (
-    <Box>
-      {/* Hero Section */}
-      <Box sx={{ 
-        bgcolor: 'primary.main', 
-        color: 'white',
-        py: 8,
-        textAlign: 'center'
-      }}>
+  return (    
+  <div>
+      <Box
+        component={motion.div}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        sx={{
+          minHeight: '90vh',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${heroBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+          color: 'white',
+          overflow: 'hidden',
+          textAlign: 'center',
+          position: 'relative'
+        }}
+      >
+        {/* Logo Container */}
+        <Box
+          sx={{
+            position: 'absolute',
+            top: { xs: 20, sm: 30 },
+            left: 0,
+            right: 0,
+            px: { xs: 2, sm: 3, md: 4 },
+            width: '100%'
+          }}
+        >
+          <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
+            <Stack 
+              direction="row" 
+              justifyContent="space-between"
+              alignItems="center"
+              sx={{ 
+                width: '100%',
+                position: 'absolute',
+                top: { xs: 70, sm: 80 },
+                left: 0,
+                px: { xs: 2, sm: 3, md: 4 }
+              }}
+            >
+              <Box
+                component="img"
+                src={IEELogo}
+                alt="IEEE Logo"
+                sx={{
+                  height: { xs: 40, sm: 45, md: 50 },
+                  width: 'auto',
+                  filter: 'brightness(0) invert(1)'
+                }}
+              />
+              <Box
+                component="img"
+                src={NTRALogo}
+                alt="NTRA Logo"
+                sx={{
+                  height: { xs: 60, sm: 65, md: 70 },
+                  width: 'auto',
+                  filter: 'brightness(0) invert(1)'
+                }}
+              />
+            </Stack>
+          </Container>
+        </Box>
+
+        {/* Main Content */}
         <Container maxWidth="lg">
           <Typography variant="h2" gutterBottom>
             Smart Cities Summit
@@ -107,8 +177,9 @@ function Summit() {
             Two Days of Innovation and Knowledge Exchange
           </Typography>
           <Typography variant="h6" sx={{ mb: 4 }}>
-            March 15-16, 2024
+            February 27, 28, 2025
           </Typography>
+          {/* ...existing button code... */}
           <Button 
             variant="contained" 
             size="large"
@@ -136,12 +207,13 @@ function Summit() {
         </Container>
       </Box>
 
+      <Box>
       {/* Tracks Section */}
       <Container maxWidth="lg" sx={{ my: 8 }}>
         <Typography variant="h3" align="center" gutterBottom>
           Summit Tracks
         </Typography>
-        <Grid container spacing={4} sx={{ mt: 4 }}>
+        <Grid container spacing={4} sx={{ mt: 4 }} justifyContent="center">
           {tracks.map((track) => (
             <Grid item xs={12} md={3} key={track.title}>
               <Paper 
@@ -175,15 +247,14 @@ function Summit() {
           </Typography>
           <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 4 }}>
             <Tabs 
-              value={currentDay} 
-              onChange={(e, newValue) => setCurrentDay(newValue)}
+              onChange={(_, newValue) => setCurrentDay(newValue)}
               centered
             >
               <Tab label="Day 1" />
               <Tab label="Day 2" />
             </Tabs>
           </Box>
-          <Grid container spacing={2}>
+          <Grid container spacing={2} justifyContent="center">
             {(currentDay === 0 ? agenda.day1 : agenda.day2).map((session, index) => (
               <Grid item xs={12} key={index}>
                 <Paper sx={{ p: 3 }}>
@@ -238,6 +309,7 @@ function Summit() {
         </Button>
       </Container>
     </Box>
+    </div>
   )
 }
 

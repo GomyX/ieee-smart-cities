@@ -5,6 +5,7 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import Hero from '../components/home/Hero'
 import About from '../components/home/About'
+import Partners from '../components/home/Partners'
 
 function Home() {
   const ref = useRef(null)
@@ -22,6 +23,8 @@ function Home() {
 
       {/* About Section */}
       <About />
+
+      <Partners />
 
       {/* Cards Section */}
       <Box 
