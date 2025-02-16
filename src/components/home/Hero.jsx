@@ -3,6 +3,9 @@ import { motion } from 'framer-motion'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { Link as RouterLink } from 'react-router-dom'
 import heroBg from "../../assets/hero.JPG";
+import IEELogo from "../../assets/IEEE-logo.png";
+import NTRALogo from "../../assets/NTRA-Logo.png";
+import AppXLogo from "../../assets/appx-logo-01.png";
 
 function Hero() {
   return (
@@ -41,7 +44,7 @@ function Hero() {
         >
           <Box
             component="img"
-            src="/src/assets/IEEE-logo.png"
+            src={IEELogo}
             alt="IEEE Logo"
             sx={{
               height: { xs: 40, sm: 45, md: 50 },
@@ -51,7 +54,7 @@ function Hero() {
           />
           <Box
             component="img"
-            src="/src/assets/NTRA-Logo.png"
+            src={NTRALogo}
             alt="NTRA Logo"
             sx={{
               height: { xs: 60, sm: 65, md: 70 },
@@ -63,7 +66,7 @@ function Hero() {
         <Stack spacing={4} alignItems="center" textAlign="center">
           <Box
             component="img"
-            src="/src/assets/appx-logo-01.png"
+            src={AppXLogo}
             alt="AppX Logo"
             sx={{
               width: '350px',
