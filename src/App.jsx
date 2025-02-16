@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom' // Add useLocation
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom' // Add useLocation and Navigate
 import { Box, Container } from '@mui/material'
 import { AnimatePresence } from 'framer-motion' // Add this import
 import Header from './components/layout/Header'
@@ -39,6 +39,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/summit" element={<Summit />} />
             <Route path="/hackathon" element={<Hackathon />} />
+            <Route path="*" element={<Navigate replace to="/" />} />
           </Routes>
         </AnimatePresence>
       </Container>
