@@ -56,7 +56,7 @@ function Footer() {
               transition={{ duration: 0.5 }}
             >
               <Typography variant="h5" color="primary" gutterBottom fontWeight="bold">
-                Smart Cities Event 2024
+                AppX'25
               </Typography>
               <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
                 A collaborative initiative by IEEE Zewail City and NTRA to shape the future of smart cities.

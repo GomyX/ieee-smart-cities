@@ -67,7 +67,7 @@ function Header() {
                 fontSize: { xs: '1.2rem', md: '1.5rem' }
               }}
             >
-              Smart Cities
+              AppX'25
             </Typography>
           </motion.div>
 
