@@ -2,7 +2,7 @@ import react from '@vitejs/plugin-react'
 
 
 export default {
-  base: '/ieee-smart-cities/',
+  base: '/',
   plugins: [react()],
   assetsInclude: ['**/*.JPG', '**/*.JPEG', '**/*.jpg'], // Add this line
   server: {
