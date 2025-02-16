@@ -168,7 +168,6 @@ function Summit() {
           </Container>
         </Box>
 
-        {/* Main Content */}
         <Container maxWidth="lg">
           <Typography variant="h2" gutterBottom>
             Smart Cities Summit
