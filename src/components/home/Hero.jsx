@@ -2,7 +2,7 @@ import { Box, Container, Typography, Button, Stack } from '@mui/material'
 import { motion } from 'framer-motion'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { Link as RouterLink } from 'react-router-dom'
-import heroBg from "../../assets/hero.jpg";
+import heroBg from "../../assets/hero.JPG";
 
 function Hero() {
   return (
