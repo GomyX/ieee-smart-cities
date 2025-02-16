@@ -164,7 +164,7 @@ function About() {
         </Grid>
 
         {/* Organizers */}
-        <Box sx={{ mt: 10, textAlign: 'center' }} component={motion.div} variants={itemVariants} initial="hidden" whileInView="visible">
+        {/* <Box sx={{ mt: 10, textAlign: 'center' }} component={motion.div} variants={itemVariants} initial="hidden" whileInView="visible">
           <Typography variant="h3" gutterBottom sx={{ fontWeight: 700, mb: 6 }}>
             Organized By
           </Typography>
@@ -188,7 +188,7 @@ function About() {
               </Paper>
             </Grid>
           </Grid>
-        </Box>
+        </Box> */}
       </Container>
     </Box>
   )

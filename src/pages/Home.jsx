@@ -24,7 +24,6 @@ function Home() {
       {/* About Section */}
       <About />
 
-      <Partners />
 
       {/* Cards Section */}
       <Box 
@@ -122,7 +121,10 @@ function Home() {
             </Grid>
           </motion.div>
         </Container>
+
+
       </Box>
+      <Partners />
     </motion.div>
   )
 }
