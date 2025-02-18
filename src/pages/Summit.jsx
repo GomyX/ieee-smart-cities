@@ -280,7 +280,7 @@ function Summit() {
             Two Days of Innovation and Knowledge Exchange
           </Typography>
           <Typography variant="h6" sx={{ mb: 4 }}>
-            February 27-28, 2025
+            February 26-27, 2025
           </Typography>
           <Button 
             variant="contained" 
