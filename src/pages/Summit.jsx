@@ -94,7 +94,7 @@ const agenda = {
     { 
       time: '10:00 - 10:40 AM', 
       session: 'Opening',
-      speaker: 'Dr. Ahmed abdelsamea, Dr. Rolla Hassan'
+      speaker: 'Dr. Ahmed abdelsamea(IEEE representative), Dr. Rolla Hassan(NTRA representative)'
     },
     { 
       time: '10:40 - 11:30 AM', 
@@ -145,31 +145,31 @@ const agenda = {
     },
     { 
       time: '10:00 - 10:40 AM', 
-      session: 'Opening',
+      session: 'Soft Skills and CSR (IBM representative)',
       speaker: 'Mai Elsamman'
     },
     { 
       time: '10:40 - 11:30 AM', 
       session: 'Talk 1: Building Smart Cities with 5G technology: A Comprehensive overview of future',
-      speaker: 'Featured Speaker'
+      speaker: 'Dr. mahmoud abelaziz'
     },
     { 
-      time: '11:30 - 12:20 PM', 
+      time: '11:30 - 12:10 PM', 
       session: 'Coffee Break',
       speaker: 'Break'
     },
     { 
       time: '12:20 - 1:10 PM', 
       session: 'Talk 2: AI in Smart Cities: Building Smarter, Adaptive Urban Futures',
-      speaker: 'Featured Speaker'
+      speaker: 'Dr. Salah Aly'
     },
     { 
       time: '1:10 - 2:00 PM', 
       session: 'Talk 3: Cybersecurity in the 5G Era: Safeguarding Smart Cities',
-      speaker: 'Eng. Ibrahim Hegazy'
+      speaker: 'Eng. Mohamed Hussien'
     },
     { 
-      time: '2:00 - 3:30 PM', 
+      time: '2:00 - 3:0 PM', 
       session: 'Break & Exhibition Area',
       speaker: 'Break'
     },
@@ -181,12 +181,12 @@ const agenda = {
     { 
       time: '4:40 - 5:50 PM', 
       session: 'Workshop 2: AI Applications',
-      speaker: 'Featured Speaker'
+      speaker: 'Eng. Mohamed Abdelgawad'
     },
     { 
       time: '5:50 - 6:30 PM', 
       session: 'Closing',
-      speaker: 'Featured Speaker'
+      speaker: ''
     }
   ]
 }
