@@ -89,47 +89,47 @@ const agenda = {
     { 
       time: '9:00 - 10:00 AM', 
       session: 'Registration',
-      speaker: 'Event Staff'
+      speaker: 'Event'
     },
     { 
       time: '10:00 - 10:40 AM', 
       session: 'Opening',
-      speaker: 'Featured Speaker'
+      speaker: 'Dr. Ahmed abdelsamea, Dr. Rolla Hassan'
     },
     { 
       time: '10:40 - 11:30 AM', 
       session: 'Talk 1: Building Smart Cities: Transforming Urban Landscapes for the Future',
-      speaker: 'Featured Speaker'
+      speaker: 'Eng. Ibrahim Hasan'
     },
     { 
       time: '11:30 AM - 12:20 PM', 
       session: 'Talk 2: 5G in Smart Cities',
-      speaker: 'Featured Speaker'
+      speaker: 'Dr. Samy Soliman'
     },
     { 
-      time: '12:20 - 1:00 PM', 
+      time: '12:20 - 12:50 PM', 
       session: 'Coffee Break',
       speaker: 'Break'
     },
     { 
       time: '1:00 - 1:50 PM', 
       session: 'Talk 3: Cloud Computing in Smart Cities',
-      speaker: 'Featured Speaker'
+      speaker: 'Eng. Mohamed Elkamhawy'
     },
     { 
       time: '1:50 - 2:40 PM', 
       session: 'Talk 4: IoT in developing Smart Cities',
-      speaker: 'Featured Speaker'
+      speaker: 'Dr. Bassem Boshra'
     },
     { 
-      time: '2:40 - 4:10 PM', 
+      time: '2:40 - 4:00 PM', 
       session: 'Break & Exhibition Area',
       speaker: 'Break'
     },
     { 
       time: '4:10 - 5:20 PM', 
       session: 'Workshop 1: Cloud Computing',
-      speaker: 'Dr. Ahmed Abdrabou'
+      speaker: 'Eng. Mohamed Elkamhawy'
     },
     { 
       time: '5:20 - 6:30 PM', 
@@ -146,7 +146,7 @@ const agenda = {
     { 
       time: '10:00 - 10:40 AM', 
       session: 'Opening',
-      speaker: 'Featured Speaker'
+      speaker: 'Mai Elsamman'
     },
     { 
       time: '10:40 - 11:30 AM', 
